@@ -9,6 +9,6 @@ use App\Http\Controllers\Controller;
 class usersController extends Controller
 {
     public function userView(){
-        return view('login');
+        return view('auth/login');
     }
 }
