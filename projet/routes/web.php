@@ -25,3 +25,6 @@ Route::post('/', [
 
 
 //MIKEL PRUEBA
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
