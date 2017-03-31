@@ -11,8 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+    'as' => 'login',
+    'uses' => 'Users\usersController@userView'
+]);
+
+Route::post('/', [
+    'as' => 'login',
+    'uses' => 'Users\usersController@userView'
+]);
+
+
+
 
 //MIKEL PRUEBA
